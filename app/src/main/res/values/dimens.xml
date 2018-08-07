@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="padding_top">8dp</dimen>
+    <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="weighted_width">0dp</dimen>
+    <dimen name="date_size">14sp</dimen>
+    <dimen name="time_size">14sp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="author_size">16sp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+</resources>

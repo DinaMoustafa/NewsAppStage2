@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayout"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context=".NewsActivity">
+
+    <LinearLayout
+        style="@style/LinearLayout"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_top">
+
+        <TextView
+            android:id="@+id/news_section"
+            android:layout_width="@dimen/weighted_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="@string/section" />
+
+        <LinearLayout
+            android:layout_width="@dimen/weighted_width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/news_date"
+                style="@style/DateTimeTextView"
+                android:layout_gravity="start"
+                android:textSize="@dimen/date_size"
+                tools:text="@string/date" />
+
+            <TextView
+                android:id="@+id/news_time"
+                style="@style/DateTimeTextView"
+                android:layout_gravity="end"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/time_size"
+                tools:text="@string/time" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold|italic"
+        tools:text="@string/title" />
+
+    <TextView
+        android:id="@+id/news_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/author_size"
+        tools:text="@string/author" />
+</LinearLayout>
